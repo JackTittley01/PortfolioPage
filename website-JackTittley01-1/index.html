@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="height=device-height, width=device-width">
+		<title>Portfolio</title>
+		<link rel="stylesheet" href="/css/stylesheet.css">
+		<link href='https://fonts.googleapis.com/css?family=League%20Spartan' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Courier%20Prime' rel='stylesheet'>
+		
+	</head>
+	<body>
+		
+		<!---HEADER-->
+		
+		<header id="header">
+			<h1 id="myName">Jack Tittley</h1>
+			<div id="menuToggler">&#8801;</div>
+			<nav id="navbar" class="closed">
+				<a id = "homeButton" >Home</a>
+				<a id= "projectsButton" >Projects</a>
+				<a id = "experienceButton" >Experience</a>
+				<a id = "contactButton" >Contact</a>
+			</nav>
+		</header>
+
+		<!---HOME-->
+		
+		<div id="home"></div>
+		<h1 id="write">H</h1> 
+
+		<img class="avatar" src="/images/avatar.png" alt="Profile Picture">
+
+		<p class="text">I'm a software engineer based in the Midlands</p>
+
+
+		<!---PROJECTS-->
+		
+		<h2 id = "projects" class = "intro">Some Projects I've Created</h2>
+
+        <div  class="projectsContainer">
+            <div class="projectImgAndDesc">
+                <div class="imgWrapper">
+                    <img class="picture" src= "/images/pexels-pixabay-262333.jpg" alt="Card Game">
+				</div>  
+				<a class="learnMore">Coming soon</a>
+                <p class="projectDescription">Cheat Game with AI</p>    
+					        
+            </div>
+
+            <div class="projectImgAndDesc">
+                   
+				<div class="imgWrapper">
+                    <img class= "picture" src= "/images/website.png" alt ="Website Code">
+				</div>  
+            	<a class="learnMore" href = "https://github.com/CTEC3905-2022/website-JackTittley01">Learn More</a> 
+                <p class="projectDescription">Portfolio Website</p>  
+			</div>
+			
+			<div class="projectImgAndDesc">
+                    
+				<div class="imgWrapper">
+                    <img class="picture" src= "/images/Picture1Cropped.png" alt="Survey App">
+				</div>  
+				<a href="https://github.com/JackTittley01/androidSurvey" class="learnMore">Learn More</a> 
+                <p class="projectDescription">Android Survey Maker</p> 
+			</div>
+
+			<div class="projectImgAndDesc">
+                <div class="imgWrapper">
+                    <img class="picture" src= "/images/placeholder.jpg" alt="Placeholder">
+				</div>  
+				<a class="learnMore">Placeholder</a>   
+                <p class="projectDescription">Placeholder</p>  
+			</div>
+        </div>
+
+		<!---EXPERIENCE-->
+
+		<h2 id="experience" class="experience">Previous Experience</h2>
+		<div class="experienceContainer">
+			<div class="experienceRow">
+				<div class="experienceHeader">
+					<p class="place">De Montfort University</p>
+					<p class="years">2020 - 2023</p>
+				</div>
+				<div class="experienceDesc">
+					<p>Bachelors degree in Computer Science</p>
+					<ul class="skills">
+						<li>Scala</li>
+						<li>Java</li>
+						<li>Kotlin</li>
+						<li>Agile Development</li>
+						<li>Data Structures</li>
+						<li>NoSQL</li>
+						<li>Fuzzy Logic</li>
+						<li>Web Development</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="experienceRow">
+				<div class="experienceHeader">
+					<p class="place">National Grid</p>
+					<p class="years">2018 - 2018</p>
+				</div>
+				<div class = "experienceDesc">
+					<p>Work Experience</p>
+					<ul class="skills">
+						<li>Salesforce</li>
+						<li>Unity</li>
+						<li>Excel</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!---CONTACT-->
+		
+		<h2 id = "contact" class="contact">Contact Me</h2>
+
+		<form action="https://formspree.io/f/myyabgeo" method="POST">
+            <div class = "form">
+                <div class = "name">
+                    <div class = "firstName">
+                        <label for="firstName" >First Name <span class = required > * </span></label>
+                        <input id="firstName" type = "text"  required name = "firstName" >
+                    </div>
+            
+                    <div class = "lastName">
+                        <label for="lastName" >Last Name <span class = required > * </span></label>
+                        <input id="lastName" type = "text" required name = "lastName" >
+                    </div>
+                </div>  
+            
+                <div class= "email">
+                    <label for= "email">Email Address <span class = required > * </span></label>
+                    <input id = "email" type = "text" required name = "email" >
+                </div>
+
+                <div class = "message">
+                    <label for = "message">Message <span class = required> * </span></label>
+                    <textarea id = "message" required name = "message" ></textarea>
+                </div>
+            
+                <div class = "send">
+                    <input type="submit" value="Send">
+                </div>
+            </div>
+        </form>
+
+		<!---FOOTER-->
+		
+		<div id="dateContainer"></div>
+		
+		<footer id="footer">
+			<h3 id= "myEmail" class = "myEmail">Jack.Tittley@gmail.com</h3>
+			<a class="github" href = "https://github.com/JackTittley01"> <img src="/images/github-mark.png" alt="github logo"></a>
+		</footer>
+		
+		<script src="js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,388 @@
+* {
+	background-color: #f7f7f7;
+	color: #024;
+	font-family:  'League Spartan', "Trebuchet MS", Helvetica, sans-serif;
+}
+
+header{
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+	align-items: center;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	z-index: 1;
+	padding-right: 1em;
+}
+
+#home {
+	padding-top: 100px;
+}
+
+#projects{
+	padding-top: 100px;
+}
+
+#experience{
+	padding-top: 100px;
+}
+
+#contact{
+	padding-top: 120px;
+	margin-top: 5em;
+}
+
+#myName{
+	margin-left: 1em;
+}
+
+#date{
+	margin-right: auto;
+	font-size: 1.4em;
+}
+
+#menuToggler{
+	margin-left: auto;
+	font-size: 2.5em;
+	
+	text-align: right;
+	margin-right: 0.5em;
+}
+
+nav{
+	margin-top: 50px;
+	transform: translatey(-100vw);
+	position: fixed;
+	display: flex;
+	text-align: right;
+	flex-direction: column;
+	font-size: 2em;
+}
+
+nav.open{
+	position: fixed;
+	transform: translateY(0);
+	transition: transform 0.5s ease-out;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 9em;
+	background-color: rgba(255, 255, 255, 0.3);
+	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(15px);
+}
+
+@media screen and(max-width: 900px){
+	nav.closed{
+		top: 0;
+		right: 0;
+		width: 100%;
+		background-color: rgba(255, 255, 255, 0.3);
+		height: 9em;
+		transition: transform 0.5s ease-in;
+		transform: translateY(-100vw);
+		backdrop-filter: blur(15px);
+	}
+}
+
+nav a{
+	margin-right: 0.5em;
+	
+	background-color:  rgba(255, 255, 255, 0);
+	margin-top: 1em;
+	text-decoration: underline rgba(0 ,0 ,0 ,0);
+}
+
+nav a:hover{
+	cursor: pointer;
+	text-decoration: underline rgba(0, 0, 0, 1);
+	transition: text-decoration-color 1s;
+	font-size: 1.1em;
+}
+
+#write{
+	margin-top:1em;
+	text-align: center;
+	color: black;
+}
+
+.avatar{
+	max-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-bottom: 5em;
+}
+
+.text{
+	text-align: center;
+	font-size: larger;
+}
+
+
+.intro{
+	text-align: center;
+	margin-top: 5em;
+	margin-bottom: 3em;
+}
+
+@media screen and (min-width: 900px){
+	nav a{
+		margin-top: 0;
+	}
+	
+	nav{
+		display: flex;
+		flex-direction: row;
+		top: 0px;
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: 1em;
+		position: static;
+		float: right;
+		transform: translateY(0);
+	}
+
+	#menuToggler{
+		display: none;
+	}
+}
+
+.projectsContainer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+	justify-content: center;
+	
+}
+
+.projectImgAndDesc{
+	display: flex;
+	flex-direction: column;
+	max-width: 300px;
+	min-width: 300px;
+	justify-content: center;
+	text-align: center;
+	box-shadow: 0.5em 0.5em black;
+	padding: 1em;
+	justify-items: center;
+	border-style:solid;
+	border-radius: 5;
+	line-height: 100%;
+	margin: 2em;
+}
+
+.learnMore{
+	background-color: black;
+	color: #f7f7f7;
+	text-decoration: none;
+	border: none;
+	height: 3em;
+	margin: 2em;
+	font-size: 16px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgWrapper{
+	max-width: 300px;
+	height: auto;
+}
+
+img{
+	height: auto;
+	width: 100%;
+	object-fit: fill;
+}
+
+.projectDescription{
+	margin-top: auto;
+}
+
+.experience{
+	margin-top: 5em;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.experienceRow{
+	display: flex;
+	flex-direction: column;
+	width: 90vw;
+	margin-left: auto;
+	margin-right: auto;	
+	margin-bottom: 4em;
+}
+
+@media screen and (min-width: 700px){
+	.experienceRow{
+		width: 60vw;
+	}
+}
+
+.experienceHeader{
+	display: flex;
+	border-style: solid;
+	border-radius: 10px;
+	flex-direction: row;
+	border-style: solid;
+	margin-left: 2em;
+	margin-right: 2em;
+	background-color: black;
+}
+
+.experienceHeader .years{
+	margin-left: auto;
+	margin-right: 1em;
+	color: #f7f7f7;
+	background-color: black;
+}
+
+.experienceHeader .place{
+	margin-left: 1em;
+	color: #f7f7f7;
+	background-color: black;
+}
+
+.experienceDesc{
+	text-align: center;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+.experienceDesc p{
+	font-weight: bold;
+}
+
+.skills{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center
+}
+
+.skills li{
+	margin-right: 2em;
+	margin-left: 1em;
+	font-family: 'courier prime';
+	padding: 0.2em;
+	overflow-x:visible;
+}
+
+.contact{
+	text-align: center;
+	margin-top: 5em;
+	margin-bottom: 1em;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+form div{
+	display: flex;
+	flex-direction: column;
+	margin:1em;
+}
+
+input{
+	font-size: 14px;
+}
+
+textarea{
+	font-size: 14px;
+}
+
+@media screen and (min-width: 800px){
+	input{
+		width: 100%;
+		font-size: 20px;
+	}
+
+	textarea{
+		font-size: 20px;
+	}
+
+	
+	form div{
+		width: 50vw;
+	}	
+}
+
+@media screen and (min-width: 1200px){
+	form div{
+		width:40vw;
+	}	
+
+	input{
+		font-size: 24px;
+	}
+	
+	textarea{
+		font-size: 24px;
+	}
+}
+
+#message{
+	height: 15em;
+	
+}
+
+.name{
+	flex-direction: row;
+}
+
+.firstName{
+	margin-right: 1em;
+	margin-left: 0;
+}
+
+.lastName{
+	margin-right: 0;
+}
+
+.send input{
+	width: 10em;
+	background-color:black;
+	color: white;
+	align-self: center;
+	text-decoration: none;
+	font-family: 'League Spartan', "Trebuchet MS", Helvetica, sans-serif;
+	height: 3em;
+	justify-content: center;
+}
+
+.required{
+	color: red;
+}
+
+input{
+	height: 2em;
+}
+
+input, textarea{
+	background-color: rgb(236, 232, 232);
+	border-color: white;
+	border-style: hidden;
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2em;
+}
+
+#date{
+	text-align: center;
+	margin-top: 5em;
+}
+
+.github{
+	margin: 2em;
+}
